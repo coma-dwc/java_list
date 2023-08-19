@@ -18,8 +18,8 @@ public class Main {
 		//整数を扱うListを作成
 		//Listに要素の追加
 ////		List<Integer> list = new LinkedList<>();
-//		List<Integer> list = new ArrayList<>();
-		List<String> list = new ArrayList<>();
+		List<Integer> list = new ArrayList<>();
+//		List<String> list = new ArrayList<>();
 //		list.add(1);
 //		list.add(2);
 		
@@ -58,18 +58,25 @@ public class Main {
 //		list.add(4);
 		
 		//要素の削除
-		list.add("aaa");
-		list.add("bbb");
-		list.add("ccc");
-		list.add("ddd");
+//		list.add("aaa");
+//		list.add("bbb");
+//		list.add("ccc");
+//		list.add("ddd");
+		
+		//要素のクリア
+		list.add(1);
+		list.add(2);
 		
 		//Listの2番目の要素を削除
 //		String removed = list.remove(1);
 //		System.out.println(removed);
 		
 		//Listから要素cccを削除
-		boolean bRemoved = list.remove("ccc");
-		System.out.println(bRemoved);
+//		boolean bRemoved = list.remove("ccc");
+//		System.out.println(bRemoved);
+		System.out.println(list);
+		
+		list.clear();
 		System.out.println(list);
 		
 		//3という値が何番目の位置にあるか
