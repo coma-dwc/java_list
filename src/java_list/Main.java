@@ -40,15 +40,24 @@ public class Main {
 		
 		
 		//要素の変更
-		list.add(5);
+//		list.add(5);
+//		list.add(2);
+//		list.add(7);
+//		list.add(4);
+//		
+//		
+//		list.set(0, 1);
+//		list.set(2, 3);
+//		System.out.println(list);
+		
+		//要素の位置の取得
+		list.add(1);
 		list.add(2);
-		list.add(7);
+		list.add(3);
 		list.add(4);
 		
-		
-		list.set(0, 1);
-		list.set(2, 3);
-		System.out.println(list);
+		//3という値が何番目の位置にあるか
+		System.out.println(list.indexOf(3));
 		
 //		System.out.println(list);
 		
