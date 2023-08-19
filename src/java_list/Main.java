@@ -18,7 +18,7 @@ public class Main {
 		//整数を扱うListを作成
 		//Listに要素の追加
 ////		List<Integer> list = new LinkedList<>();
-		List<Integer> list = new ArrayList<>();
+//		List<Integer> list = new ArrayList<>();
 //		List<String> list = new ArrayList<>();
 //		list.add(1);
 //		list.add(2);
@@ -64,8 +64,8 @@ public class Main {
 //		list.add("ddd");
 		
 		//要素のクリア
-		list.add(1);
-		list.add(2);
+//		list.add(1);
+//		list.add(2);
 		
 		//Listの2番目の要素を削除
 //		String removed = list.remove(1);
@@ -74,10 +74,10 @@ public class Main {
 		//Listから要素cccを削除
 //		boolean bRemoved = list.remove("ccc");
 //		System.out.println(bRemoved);
-		System.out.println(list);
-		
-		list.clear();
-		System.out.println(list);
+//		System.out.println(list);
+//		
+//		list.clear();
+//		System.out.println(list);
 		
 		//3という値が何番目の位置にあるか
 //		System.out.println(list.indexOf(3));
@@ -88,5 +88,22 @@ public class Main {
 //		System.out.println(list.get(0));
 //		System.out.println(list.get(2));
 //		System.out.println(list.size());
+		
+		
+		
+		//他のコレクションの追加
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(1);
+		list1.add(2);
+		List<Integer> list2 = new ArrayList<>();
+		list2.add(3);
+		list2.add(4);
+		
+		System.out.println(list1);
+		System.out.println(list2);
+		
+		list1.addAll(list2);
+		System.out.println(list1);
+		System.out.println(list2);
 	}
 }
