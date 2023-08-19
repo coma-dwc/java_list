@@ -35,14 +35,26 @@ public class Main {
 //		list.add(3);
 		
 		//要素数の取得
-		list.add(1);
+//		list.add(1);
+//		list.add(2);
+		
+		
+		//要素の変更
+		list.add(5);
 		list.add(2);
+		list.add(7);
+		list.add(4);
+		
+		
+		list.set(0, 1);
+		list.set(2, 3);
+		System.out.println(list);
 		
 //		System.out.println(list);
 		
 		//Listの最初の要素と3番目の要素を参照
 //		System.out.println(list.get(0));
 //		System.out.println(list.get(2));
-		System.out.println(list.size());
+//		System.out.println(list.size());
 	}
 }
