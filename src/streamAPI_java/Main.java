@@ -2,6 +2,7 @@ package streamAPI_java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,6 +12,9 @@ public class Main {
 		}
 		
 		System.out.println(list);
-		System.out.println(list.stream());
+//		System.out.println(list.stream());
+		//Streamに変換したListを再度Listに戻す
+		List<Integer> list2 = list.stream().collect(Collectors.toList());
+		System.out.println(list2);
 	}
 }
