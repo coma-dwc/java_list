@@ -13,7 +13,12 @@ public class Main {
 		
 		System.out.println(list);
 		
-		list.sort(null);
+//		list.sort(null);
+//		System.out.println(list);
+		
+		
+		//Comparatorを使う(整数のリストを逆順にソートする)
+		list.sort((a, b) -> b - a);
 		System.out.println(list);
 	}
 }
