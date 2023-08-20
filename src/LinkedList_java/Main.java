@@ -21,8 +21,16 @@ public class Main {
 		list.add(4);
 		
 		//getFirstメソッド:要素の先頭から要素を取得
-		System.out.println("先頭: " + list.getFirst());
+//		System.out.println("先頭: " + list.getFirst());
 		//getLastメソッド:要素の末尾から要素を取得
-		System.out.println("末尾: " + list.getLast());
+//		System.out.println("末尾: " + list.getLast());
+		
+		
+		//removeFirstメソッド:要素の先頭から要素を削除
+		System.out.println("先頭: " + list.removeFirst());
+		//removeLastメソッド:要素の末尾から要素を削除
+		System.out.println("末尾: " + list.removeLast());
+		System.out.println(list);
+				
 	}
 }
