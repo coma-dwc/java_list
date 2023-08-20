@@ -9,7 +9,6 @@ public class Main {
 		List<Integer> list = new ArrayList<>();
 		for(int i=1; i<=10; i++) {
 			list.add(i);
-			list.add(i);
 		}
 		
 		System.out.println(list);
@@ -27,8 +26,15 @@ public class Main {
 		
 		
 		//重複のあるListから重複を取り除く(distinctメソッド）
+//		List<Integer> list2 = list.stream()
+//				.distinct()
+//				.collect(Collectors.toList());
+//		System.out.println(list2);
+		
+		
+		//整数のListをその値の二乗を表すListに変換
 		List<Integer> list2 = list.stream()
-				.distinct()
+				.map(v -> v * v)
 				.collect(Collectors.toList());
 		System.out.println(list2);
 	}
