@@ -9,6 +9,7 @@ public class Main {
 		List<Integer> list = new ArrayList<>();
 		for(int i=1; i<=10; i++) {
 			list.add(i);
+			list.add(i);
 		}
 		
 		System.out.println(list);
@@ -19,8 +20,15 @@ public class Main {
 //		System.out.println(list2);
 		
 		//整数のListから偶数のみを取り出す(filterメソッド)
+//		List<Integer> list2 = list.stream()
+//				.filter(v -> v % 2== 0)
+//				.collect(Collectors.toList());
+//		System.out.println(list2);
+		
+		
+		//重複のあるListから重複を取り除く(distinctメソッド）
 		List<Integer> list2 = list.stream()
-				.filter(v -> v % 2== 0)
+				.distinct()
 				.collect(Collectors.toList());
 		System.out.println(list2);
 	}
