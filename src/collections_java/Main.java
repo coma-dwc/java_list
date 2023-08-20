@@ -17,7 +17,12 @@ public class Main {
 		list.add("aaa");
 		list.add("bbb");
 		
-		List<String> list2 = Collections.unmodifiableList(list);
-		list2.add("ccc");  //この行がエラーになる
+//		List<String> list2 = Collections.unmodifiableList(list);
+//		list2.add("ccc");  //この行がエラーになる
+		
+		
+		//Collections.synchronizedListを使用して同期化されたListを取得
+		List<String> list2 = Collections.synchronizedList(list);
+		System.out.println(list2);
 	}
 }
