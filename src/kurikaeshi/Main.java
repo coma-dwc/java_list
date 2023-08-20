@@ -1,7 +1,6 @@
 package kurikaeshi;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Main {
@@ -15,10 +14,15 @@ public class Main {
 //		}
 		
 		//Iteratorを使う
-		Iterator<String> it = list.iterator();
-		while(it.hasNext()) {
-			String item = it.next();
+//		Iterator<String> it = list.iterator();
+//		while(it.hasNext()) {
+//			String item = it.next();
+//			System.out.println(item);
+//		}
+		
+		//forEach
+		list.forEach(item -> {
 			System.out.println(item);
-		}
+		});
 	}
 }
