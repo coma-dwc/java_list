@@ -13,8 +13,15 @@ public class Main {
 		
 		System.out.println(list);
 //		System.out.println(list.stream());
-		//Streamに変換したListを再度Listに戻す
-		List<Integer> list2 = list.stream().collect(Collectors.toList());
+		
+		//Streamに変換したListを再度Listに戻す collect(Collectors.toList)
+//		List<Integer> list2 = list.stream().collect(Collectors.toList());
+//		System.out.println(list2);
+		
+		//整数のListから偶数のみを取り出す(filterメソッド)
+		List<Integer> list2 = list.stream()
+				.filter(v -> v % 2== 0)
+				.collect(Collectors.toList());
 		System.out.println(list2);
 	}
 }
